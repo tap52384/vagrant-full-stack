@@ -5,7 +5,7 @@
 # url for linux x86-x64 oracle instantclient downloads
 # http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html
 
-SMTP_RELAY=''
+SMTP_RELAY='relay.unc.edu'
 
 # sets a variable so that phpmyadmin installs in noninteractive mode
 export DEBIAN_FRONTEND=noninteractive
