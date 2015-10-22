@@ -3,6 +3,8 @@ Vagrantfile and script for a full-stack development environment.
 
 As I learn what is needed for me to perfect my craft, this script will change to automatically create the environment I need and install all the tools necessary for me to proceed.
 
+What's next to learn: Gulp, Browserify, SASS, Bootstrap 4.0, ReactJS, NodeJS, NPM, MySQL, etc.
+
 ### What's installed
 
 * Ubuntu 64-bit
