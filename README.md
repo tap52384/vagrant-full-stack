@@ -1,6 +1,8 @@
 # vagrant-full-stack
 Vagrantfile and script for a full-stack development environment.
 
+As I learn what is needed for me to perfect my craft, this script will change to automatically create the environment I need and install all the tools necessary for me to proceed.
+
 ### What's installed
 
 * Ubuntu 64-bit
@@ -13,7 +15,7 @@ Vagrantfile and script for a full-stack development environment.
   * Basic and SDK files are required in shared/ folder
 * NodeJS, NPM
 * Utilities
-  * curl, vim, rsync, wget
+  * curl, git, vim, rsync, wget,  rpm, unzip, make, sendmail
 
 ### What's customized
 
