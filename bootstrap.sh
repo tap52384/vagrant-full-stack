@@ -5,7 +5,7 @@
 # url for linux x86-x64 oracle instantclient downloads
 # http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html
 
-SMTP_RELAY='relay.unc.edu'
+SMTP_RELAY=''
 
 # sets a variable so that phpmyadmin installs in noninteractive mode
 export DEBIAN_FRONTEND=noninteractive
@@ -101,14 +101,8 @@ sed -i "s/AllowOverride None/AllowOverride All/g" /etc/apache2/apache2.conf
 ### enable Apache mod_rewrite
 a2enmod rewrite
 
-  ### set environment variables normally set by shibboleth for testing
-  echo "Adding Test Environment variables normally provided by Shibboleth for user zplewis..."
-  echo -e '\r\nSetEnv uid zplewis' >> /etc/apache2/apache2.conf
-  echo -e '\r\nSetEnv pid 707934956' >> /etc/apache2/apache2.conf
-  echo -e '\r\nSetEnv mail patrick_lewis@unc.edu' >> /etc/apache2/apache2.conf
-  echo -e '\r\nSetEnv sn lewis' >> /etc/apache2/apache2.conf
-  echo -e '\r\nSetEnv givenName zharal' >> /etc/apache2/apache2.conf
-  echo -e "\r\nSetEnv LD_LIBRARY_PATH $LD_LIBRARY_PATH" >> /etc/apache2/apache2.conf
+# needed for Oracle drivers
+echo -e "\r\nSetEnv LD_LIBRARY_PATH $LD_LIBRARY_PATH" >> /etc/apache2/apache2.conf
 
 echo "Restarting Apache Service..."
 service apache2 restart
